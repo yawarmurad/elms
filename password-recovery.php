@@ -55,9 +55,13 @@
     <!-- preloader area end -->
     <!-- login area start -->
     
-    <div class="login-area login-s2">
+    <div class="login-area">
         <div class="container">
-        <?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
+        <div class="row">
+            <div class="col-lg-6 pt-4">
+            <img src="./assets/images/Forgot-password.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-lg-6"><?php if($error){?><div class="alert alert-danger alert-dismissible fade show"><strong>Info: </strong><?php echo htmlentities($error); ?>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -69,7 +73,6 @@
                 </button>
              </div><?php }?>
             <div class="login-box ptb--100">
-
                 <form method="POST" name="signin">
                     <div class="login-form-head">
                         <h4>Recover Your Password</h4>
@@ -139,6 +142,7 @@
               
             </div>
             
+        </div></div>
         </div>
     </div>
     <!-- login area end -->

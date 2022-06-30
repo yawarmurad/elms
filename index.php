@@ -66,7 +66,11 @@ if (isset($_POST['signin'])) {
     <!-- login area start -->
     <div class="login-area">
         <div class="container">
-            <div class="login-box pt-3">
+            <div class="row">
+                <div class="col-lg-6 pt-3">
+                <img src="./assets/images/login.png" class="img-fluid" alt="...">
+                </div>
+                <div class="col-lg-6"><div class="login-box pt-3">
                 <form method="POST" name="signin">
                     <div class="login-form-head">
                         <h4>Employee Login Panel</h4>
@@ -74,7 +78,6 @@ if (isset($_POST['signin'])) {
                         <?php if ($msg) { ?><div class="errorWrap"><strong>Error</strong> : <?php echo htmlentities($msg); ?> </div><?php } ?>
                     </div>
                     <div class="login-form-body">
-
                         <div class="form-floating mb-3">
                             <input type="email" id="username" name="username" class="form-control border border-primary" id="floatingInput" placeholder="name@example.com" autocomplete="off" required>
                             <label for="floatingInput">Email address</label>
@@ -102,6 +105,7 @@ if (isset($_POST['signin'])) {
                         </div>
                     </div>
                 </form>
+            </div></div>
             </div>
         </div>
     </div>

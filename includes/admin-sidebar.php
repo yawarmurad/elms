@@ -3,7 +3,7 @@
         <div class="">
             <div class="clearfix">
                 <div class="user-profile pull-right">
-                    <img class="avatar user-thumb" src="../assets/images/admin.png" alt="avatar">
+                    <img class="avatar user-thumb" src="../assets/images/icon/logo.png" alt="avatar">
                     <h4 class="user-name dropdown-toggle" data-toggle="dropdown">
                         <?php
                         $alogin = $_SESSION['alogin'];
@@ -13,7 +13,6 @@
                         $results = $query->fetch(PDO::FETCH_OBJ);
                         echo ucwords($results->fullname); ?>
                     </h4>
-
                 </div>
             </div>
         </div>

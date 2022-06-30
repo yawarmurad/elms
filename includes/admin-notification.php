@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../assets/css/styles.css">
+ <link rel="stylesheet" href="../assets/css/styles.css">
 
 <?php 
     include 'dbconn.php';

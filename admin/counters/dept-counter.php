@@ -1,4 +1,4 @@
-<?php
+ <?php
     include '../../includes/dbconn.php';
 
     $sql = "SELECT id from tbldepartments";

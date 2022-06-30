@@ -76,7 +76,7 @@ if (strlen($_SESSION['emplogin']) == 0) {
         <div class="page-container">
             <div class="row">
                 <div class="col-lg-3">
-                   <?php include 'sidebar.php' ?>
+                    <?php include 'sidebar.php' ?>
                 </div>
                 <div class="col-lg-9">
                     <div class="main-content">
@@ -135,15 +135,16 @@ if (strlen($_SESSION['emplogin']) == 0) {
 
                                                         <div class="row">
                                                             <div class="col-lg-4">
+                                                                
                                                                 <div class="form-group">
                                                                     <label for="example-date-input" class="col-form-label">Starting Date</label>
-                                                                    <input class="form-control" type="date" value="<?php date('d-m-Y') ?>" data-inputmask="'alias': 'date'" required id="example-date-input" name="fromdate">
+                                                                    <input class="form-control" id="date" type="date" min="<?php echo date('Y-m-d')?>" value="<?php echo date('Y-m-d')?>" data-inputmask="'alias': 'date'" required id="example-date-input" name="fromdate">
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-4">
                                                                 <div class="form-group">
                                                                     <label for="example-date-input" class="col-form-label">End Date</label>
-                                                                    <input class="form-control" type="date" value="<?php date('d-m-Y') ?>" data-inputmask="'alias': 'date'" required id="example-date-input" name="todate">
+                                                                    <input class="form-control" type="date" value="<?php echo date('Y-m-d') ?>" data-inputmask="'alias': 'date'" required id="example-date-input" name="todate">
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-4">

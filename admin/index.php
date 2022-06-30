@@ -59,7 +59,8 @@
     <!-- login area start -->
     <div class="login-area">
         <div class="container">
-            <div class="login-box ptb--30">
+            <div class="row">
+                <div class="col-lg-6"><div class="login-box ptb--30">
                 <form name="signin" method="POST">
                     <div class="login-form-head">
                         <h4>ADMIN PANEL</h4>
@@ -84,6 +85,10 @@
                         </div>
                     </div>
                 </form>
+            </div></div>
+                <div class="col-lg-6">
+                <img src="../assets/images/Admin-login.png" class="img-fluid" alt="...">
+                </div>
             </div>
         </div>
     </div>
